@@ -261,7 +261,7 @@ int sunxi_sram_claim(struct device *dev)
 }
 EXPORT_SYMBOL(sunxi_sram_claim);
 
-static void sunxi_sram_release(struct device *dev)
+void sunxi_sram_release(struct device *dev)
 {
 	const struct sunxi_sram_data *sram_data;
 	struct sunxi_sram_desc *sram_desc;
