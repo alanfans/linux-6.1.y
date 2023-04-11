@@ -4,7 +4,7 @@
 #
 
 config SUNXI_MBUS
-	bool
+	bool "Allwinner sunxi-mbus"
 	default y
 	depends on ARM || ARM64
 	help
@@ -12,7 +12,7 @@ config SUNXI_MBUS
 	  MBUS DMA quirks.
 
 config SUNXI_SRAM
-	bool
+	bool "Allwinner sunxi-sram"
 	default y
 	select REGMAP_MMIO
 	help
