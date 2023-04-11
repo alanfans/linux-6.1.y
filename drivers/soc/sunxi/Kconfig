@@ -6,13 +6,14 @@
 config SUNXI_MBUS
 	bool "Allwinner sunxi-mbus"
 	default y
-	depends on ARM || ARM64
+	depends on NET_VENDOR_ALLWINNER
 	help
 	  Say y to enable the fixups needed to support the Allwinner
 	  MBUS DMA quirks.
 
 config SUNXI_SRAM
 	bool "Allwinner sunxi-sram"
+	depends on NET_VENDOR_ALLWINNER
 	default y
 	select REGMAP_MMIO
 	help
