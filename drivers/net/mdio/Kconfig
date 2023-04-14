@@ -48,7 +48,6 @@ config MDIO_DEVRES
 
 config MDIO_SUN4I
 	tristate "Allwinner sun4i MDIO interface support"
-	depends on MDIO_BITBANG
 	depends on ARCH_SUNXI || COMPILE_TEST
 	help
 	  This driver supports the MDIO interface found in the network
